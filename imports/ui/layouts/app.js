@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from 'react-bootstrap';
+import { composeWithTracker } from 'react-komposer';
 import AppNavigation from '../containers/app-navigation';
 
 export const App = React.createClass({
@@ -9,9 +9,9 @@ export const App = React.createClass({
   render() {
     return <div>
       <AppNavigation />
-      <Grid>
+      <div>
         { this.props.children }
-      </Grid>
+      </div>
     </div>;
-  },
+  }
 });

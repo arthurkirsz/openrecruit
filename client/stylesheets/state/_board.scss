@@ -1,0 +1,105 @@
+#content {
+	position: relative;
+	height: calc(100vh - 50px);
+	width: 100%;
+	overflow: hidden;
+}
+.board-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.board-header {
+	background-color: #393d60!important;
+}
+
+.board-header .navbar-nav > li.active > a,
+.board-header .navbar-nav > li.active > a:focus,
+.board-header .navbar-nav > li.active > a:hover {
+	color: #FFF;
+	background-color: #2e3350;
+}
+
+.board-header .navbar-nav > .open > a, 
+.board-header .navbar-nav > .open > a:focus, 
+.board-header .navbar-nav > .open > a:hover {	
+  color: #FFF;
+  background-color: #2e3350;
+}
+
+.board-header .material-icons {
+	font-size: 16px;
+	position: relative;
+    top: 2px;
+}
+
+.board-canvas {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 0;
+    -webkit-transition: margin .1s ease-in;
+    transition: margin .1s ease-in;
+}
+
+#board {
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.list-wrapper:first-child {
+    margin-left: 10px;
+}
+.list-wrapper {
+    width: 270px;
+    margin: 0 5px;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    background-color: white;
+}
+
+
+.list {
+    background: #e2e4e6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+}
