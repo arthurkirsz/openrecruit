@@ -5,7 +5,8 @@ import { insertCandidate } from '../../../api/candidates/methods.js';
 
 const handleInsertCandidate = (event) => {
   const target = event.target;
-  const firstname = lastname = target.value.trim();
+  const firstname = target.value.trim();
+  const lastname = target.value.trim();
 
   if (firstname !== '' && event.keyCode === 13) {
     insertCandidate.call({
@@ -21,7 +22,7 @@ const handleInsertCandidate = (event) => {
   }
 };
 
-export const AddJob = () => (
+export const AddCandidate = () => (
   <FormGroup>
     <FormControl
       type="text"
