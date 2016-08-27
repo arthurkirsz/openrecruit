@@ -6,7 +6,8 @@ import { rateLimit } from '../../modules/rate-limit.js';
 export const insertCandidate = new ValidatedMethod({
   name: 'candidates.insert',
   validate: new SimpleSchema({
-    title: { type: String }
+    firstname: { type: String },
+    lastname: { type: String }
   }).validator(),
   run(candidate) {
     candidate.ownerId = Meteor.userId();

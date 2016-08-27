@@ -18,24 +18,17 @@ Candidates.deny({
 });
 
 Candidates.schema = new SimpleSchema({
-  title: {
-    type: String,
-    label: 'The title of the candidate.',    
+  picture: {
+    type: String, 
+    optional: true
   },
-  contract: {
+  firstname: {
     type: String,
-    label: 'The contract type of the candidate.',
-    optional: true // TEMPORARY
+    label: "The candidate's firstname"
   },
-  location: {
+  lastname: {
     type: String,
-    label: 'The location of the candidate.',
-    optional: true // TEMPORARY
-  },
-  ownerId: {
-    type: String,
-    label: 'The owner id of the candidate.',
-    optional: true // TEMPORARY
+    label: "The candidate's lastname"
   }
 });
 
