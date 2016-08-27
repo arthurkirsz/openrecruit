@@ -12,4 +12,4 @@ const composer = (params, onData) => {
   }
 };
 
-export default composeWithTracker(composer, Loading)(Candidates);
+export default composeWithTracker(composer, Loading)(CandidatesList);
