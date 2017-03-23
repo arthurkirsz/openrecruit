@@ -10,6 +10,7 @@ export const upsertJob = new ValidatedMethod({
     title: { type: String, optional: true },
   }).validator(),
   run(job) {
+    job.columns = [];
     return Jobs.upsert({ _id: job._id }, { $set: job });
   },
 });
@@ -21,6 +22,17 @@ export const removeJob = new ValidatedMethod({
   }).validator(),
   run({ _id }) {
     Jobs.remove(_id);
+  },
+});
+
+export const addColumn = new ValidatedMethod({
+  name: 'jobs.column.add',
+  validate: new SimpleSchema({
+    _id: { type: String, optional: true },
+    column: { type: Object, blackbox: true },
+  }).validator(),
+  run({ _id, column }) {
+    return Jobs.update(_id, { $push: { columns: column } });
   },
 });
 

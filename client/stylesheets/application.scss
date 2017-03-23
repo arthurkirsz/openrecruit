@@ -16,25 +16,22 @@
 @import "state/button";
 @import "state/column";
 
-.full-popup {
-  position: absolute;
-  top:0px;
-  left:0px;
-  right:0px;
-  background: #F5F5F5;
-}
 
-.card {
-  margin: 0px auto!important;
-  float: none!important;
-  border: 1px solid #ddd!important;
-  padding: 30px 50px!important;
-  border-radius: 5px!important;
-  background: #fff!important;
-}
+.JobPane {
 
-@media (min-width: 768px) {
-  .card {
-    margin: 60px auto 60px!important;
-  }
+    overflow: auto !important;
+    bottom: 0 !important;
+    position: absolute !important;
+    background-color: #fff !important;
+    border-left: 1px #e1e4e8 solid !important;
+    border-bottom: 1px #e1e4e8 solid !important;
+
+    top: -20px;
+    right: -20px;
+    z-index: 40;
+    width: 360px;
+    white-space: normal;
+    background-clip: padding-box;
+    -webkit-animation: show-pane 0.2s cubic-bezier(0, 0, 0, 1);
+    animation: show-pane 0.2s cubic-bezier(0, 0, 0, 1);
 }

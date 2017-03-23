@@ -17,10 +17,21 @@ Jobs.deny({
   remove: () => true,
 });
 
+const ColumnSchema = new SimpleSchema({
+  name: {
+    type: String,
+    label: 'The name of the column',
+  },
+});
+
 Jobs.schema = new SimpleSchema({
   title: {
     type: String,
     label: 'The title of the job.',
+  },
+  columns: {
+    type: [ColumnSchema],
+    label: 'Array of columns.',
   },
 });
 
