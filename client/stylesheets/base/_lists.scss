@@ -1,0 +1,76 @@
+
+.list-table {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding:  0px;
+    margin:0px;
+}
+.list-table li {
+    padding: 20px;
+    margin-bottom: 0px;
+    list-style: none;
+    text-align: center
+}
+.list-table li:not(:last-child) {
+    border-bottom: 1px solid #eee
+}
+.list-table li h3 {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600
+}
+.list-table li .custom-donation {
+    display: inline-block
+}
+.list-table li .custom-donation label {
+    display: none
+}
+.list-table li .custom-donation .form-input {
+    float: left;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px 0px 0px 3px
+}
+.list-table li .custom-donation .button {
+    float: right;
+    width: calc( 100% - 80px);
+    border-radius: 0px 3px 3px 0px
+}
+.list-table li .custom-donation .form-input,
+.list-table li .custom-donation .button {
+    height: 43px
+}
+.list-table li .custom-donation .button:active {
+    top: 0px
+}
+@media (min-width: 768px) {
+    .list-table li {
+        text-align: left
+    }
+    .list-table li h3 {
+        position: relative;
+        // top: 9px;
+        float: left
+    }
+    .list-table li button {
+        float: right
+    }
+    .list-table li .custom-donation {
+        float: right
+    }
+    .list-table li .custom-donation .form-input {
+        width: 90px
+    }
+    .list-table li .custom-donation .button {
+        width: calc( 100% - 90px)
+    }
+}
+
+
+.list-table li:before, .list-table li:after {
+    display: table;
+    content: "";
+    clear:both;
+}

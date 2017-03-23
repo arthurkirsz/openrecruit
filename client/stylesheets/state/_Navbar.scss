@@ -1,6 +1,25 @@
-.navbar-default .navbar-nav > li > a.active,
-.navbar-default .navbar-nav > li > a.active:focus,
-.navbar-default .navbar-nav > li > a.active:hover {
-  color: #555;
-  background-color: #e7e7e7;
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #31AAEC!important;
+  background-color: transparent!important;
+}
+
+
+.navbar-default {
+  // background-color: transparent!important;
+  // border-color: transparent!important;
+  border-radius: 0px!important;
+  min-height: 60px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-brand {
+  height: 60px;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }

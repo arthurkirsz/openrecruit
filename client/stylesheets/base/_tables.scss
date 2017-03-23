@@ -1,0 +1,15 @@
+.table {
+  margin-bottom: 0px !important;
+}
+
+.center-vertical {
+  vertical-align: middle !important;
+}
+
+.borderless > tbody > tr > td:first-child {
+  border-right: none !important;
+}
+
+.borderless > tbody > tr > td:last-child {
+  border-left: none !important;
+}

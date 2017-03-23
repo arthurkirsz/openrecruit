@@ -1,0 +1,96 @@
+
+.button {
+    display: inline-block;
+    color: #aaa;
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 0;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    // text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.button i {
+    line-height: 1em
+}
+.button.block {
+    display: block
+}
+.button:hover {
+    cursor: pointer
+}
+.button:active {
+    position: relative;
+    top: 1px
+}
+.button:focus {
+    outline: 0
+}
+a.button {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+input[type="submit"],
+button {
+    font-size: 14px;
+    font-family: "proxima-nova-soft", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+input[type="submit"] {
+  font-weight: bold;
+}
+button.button {
+  font-weight: bold;
+}
+.button.default {
+    background: #ccc;
+    color: #888
+}
+.button.default:hover,
+.button.default:focus {
+    background: #aaa;
+    color: #666
+}
+.button.red {
+    background: #da5347;
+    color: #fff
+}
+.button.red:hover,
+.button.red:focus {
+    background: #d63f32;
+    color: #fff
+}
+.button.green {
+    background: #75ba50;
+    color: #fff
+}
+.button.green:hover,
+.button.green:focus {
+    background: #68ac44;
+    color: #fff
+}
+.button.blue {
+    background: #1b9edb;
+    color: #fff
+}
+.button.blue:hover,
+.button.blue:focus {
+    background: #188ec4;
+    color: #fff
+}
+.button.loading {
+    pointer-events: none;
+    opacity: 0.5
+}
+.button-list li {
+    list-style: none;
+    margin: 0px
+}
