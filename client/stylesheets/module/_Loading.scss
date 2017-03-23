@@ -1,4 +1,4 @@
-.loading {
+.Loading {
   -webkit-animation-name: rotate;
   -webkit-animation-duration: 0.5s;
   -webkit-animation-iteration-count: infinite;
@@ -7,4 +7,9 @@
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.Loading {
+  display: block;
+  margin: 50px auto;
 }
