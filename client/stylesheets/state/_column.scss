@@ -1,0 +1,13 @@
+.AddColumnButton {
+  width: 315px;
+  text-decoration: none;
+  border: 1px dashed #e5e5e5;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 3px;
+  cursor:pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

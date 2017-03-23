@@ -5,6 +5,7 @@
 @import "base/tables";
 @import "base/lists";
 @import "base/alerts";
+@import "base/modals";
 
 @import "module/loading";
 @import "module/login";
@@ -13,7 +14,7 @@
 
 @import "state/navbar";
 @import "state/button";
-@import "state/pod";
+@import "state/column";
 
 .full-popup {
   position: absolute;
