@@ -1,28 +1,17 @@
-import { Candidates } from './candidates';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
-import { rateLimit } from '../../modules/rate-limit.js';
+import Candidates from './candidates';
+import rateLimit from '../../modules/rate-limit.js';
 
-export const insertCandidate = new ValidatedMethod({
-  name: 'candidates.insert',
+export const upsertCandidate = new ValidatedMethod({
+  name: 'candidates.upsert',
   validate: new SimpleSchema({
+    _id: { type: String, optional: true },
     firstname: { type: String },
-    lastname: { type: String }
+    lastname: { type: String },
   }).validator(),
   run(candidate) {
-    candidate.ownerId = Meteor.userId();
-    Candidates.insert(candidate);
-  },
-});
-
-export const updateCandidate = new ValidatedMethod({
-  name: 'candidates.update',
-  validate: new SimpleSchema({
-    _id: { type: String },
-    'update.title': { type: String, optional: true },
-  }).validator(),
-  run({ _id, update }) {
-    Candidates.update(_id, { $set: update });
+    return Candidates.upsert({ _id: candidate._id }, { $set: candidate });
   },
 });
 
@@ -38,8 +27,7 @@ export const removeCandidate = new ValidatedMethod({
 
 rateLimit({
   methods: [
-    insertCandidate,
-    updateCandidate,
+    upsertCandidate,
     removeCandidate,
   ],
   limit: 5,

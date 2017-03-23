@@ -1,5 +1,5 @@
 import React from 'react';
-import JobEditor from '../components/JobEditor.js';
+import JobEditor from '../../components/jobs/JobEditor.js';
 
 const NewJob = () => (
   <div className="NewJob">

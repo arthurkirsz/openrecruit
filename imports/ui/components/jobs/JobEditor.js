@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
-import jobEditor from '../../modules/job-editor.js';
+import jobEditor from '../../../modules/job-editor.js';
 
 export default class JobEditor extends React.Component {
   componentDidMount() {

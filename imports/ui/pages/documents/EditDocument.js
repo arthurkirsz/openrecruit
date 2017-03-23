@@ -1,6 +1,6 @@
 import React from 'react';
-import DocumentEditor from '../components/DocumentEditor';
-import NotFound from './NotFound';
+import DocumentEditor from '../../components/documents/DocumentEditor';
+import NotFound from '../NotFound';
 
 const EditDocument = ({ doc }) => {
   return doc ? (

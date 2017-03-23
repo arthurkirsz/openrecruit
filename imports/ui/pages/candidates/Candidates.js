@@ -1,25 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { Row, Col, Button } from 'react-bootstrap';
-import DocumentsList from '../containers/DocumentsList.js';
+import CandidatesList from '../../containers/candidates/CandidatesList.js';
 
-const Documents = () => (
-  <div className="Documents">
+const Candidates = () => (
+  <div className="Candidates">
     <Row>
       <Col xs={ 12 }>
         <div className="page-header clearfix">
-          <h4 className="pull-left">Documents</h4>
-          <Link to="/documents/new">
+          <h4 className="pull-left">Candidates</h4>
+          <Link to="/candidates/new">
             <Button
               bsStyle="success"
               className="pull-right"
-            >New Document</Button>
+            >New Candidate</Button>
           </Link>
         </div>
-        <DocumentsList />
+        <CandidatesList />
       </Col>
     </Row>
   </div>
 );
 
-export default Documents;
+export default Candidates;

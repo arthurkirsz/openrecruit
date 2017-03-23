@@ -17,10 +17,6 @@ Candidates.deny({
 });
 
 Candidates.schema = new SimpleSchema({
-  jobId: {
-    type: String,
-    label: 'The candidate assigned job',
-  },
   firstname: {
     type: String,
     label: 'The candidate\'s firstname',

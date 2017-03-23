@@ -2,8 +2,8 @@ import React from 'react';
 import { ButtonToolbar, ButtonGroup, Button } from 'react-bootstrap';
 import { browserHistory } from 'react-router';
 import { Bert } from 'meteor/themeteorchef:bert';
-import { removeJob } from '../../api/jobs/methods';
-import NotFound from './NotFound';
+import { removeJob } from '../../../api/jobs/methods';
+import NotFound from '../NotFound';
 
 const handleEdit = (_id) => {
   browserHistory.push(`/jobs/${_id}/edit`);

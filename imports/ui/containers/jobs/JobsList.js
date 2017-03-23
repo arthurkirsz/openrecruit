@@ -1,8 +1,8 @@
 import { composeWithTracker } from 'react-komposer';
 import { Meteor } from 'meteor/meteor';
-import Jobs from '../../api/jobs/jobs.js';
-import JobsList from '../components/JobsList.js';
-import Loading from '../components/Loading.js';
+import Jobs from '../../../api/jobs/jobs.js';
+import JobsList from '../../components/jobs/JobsList.js';
+import Loading from '../../components/Loading.js';
 
 const composer = (params, onData) => {
   const subscription = Meteor.subscribe('jobs.list');
