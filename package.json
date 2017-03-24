@@ -11,6 +11,7 @@
     "production": "meteor deploy production.meteor.com --settings settings-production.json"
   },
   "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "chimp": "^0.41.2",
     "eslint": "^3.8.1",
     "eslint-config-airbnb": "^12.0.0",
@@ -18,6 +19,11 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-meteor": "^4.0.1",
     "eslint-plugin-react": "^6.4.1"
+  },
+  "babel": {
+    "plugins": [
+      "babel-plugin-transform-decorators-legacy"
+    ]
   },
   "eslintConfig": {
     "parserOptions": {
